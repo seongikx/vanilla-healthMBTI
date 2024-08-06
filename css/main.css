@@ -83,7 +83,7 @@ input[type="text"] {
 button {
   width: 100%;
   padding: 10px 20px;
-  background-color: #000;
+  background-color: orange;
   color: white;
   border: none;
   border-radius: 5px;
@@ -92,7 +92,7 @@ button {
 }
 
 button:hover {
-  background-color: gray;
+  background-color: #ab7819;
 }
 
 .vertical-image {

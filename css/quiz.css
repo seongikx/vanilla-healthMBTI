@@ -15,17 +15,35 @@ html {
   max-width: 100%;
   text-align: center;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-color: #fff;
+}
+
+#quiz-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .page {
   display: block;
 }
 
-button {
-  padding: 10px 20px;
+#option-buttons {
   margin-top: 20px;
+}
+
+.option-btn {
+  padding: 10px 20px;
+  margin: 5px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #fff;
+  border-color: orange;
+  color: black;
+  border: 2px solid orange;
+  border-radius: 20px;
+}
+
+.option-btn:hover {
+  background-color: orange;
 }

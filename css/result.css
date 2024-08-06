@@ -16,22 +16,37 @@ html {
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
-.page {
-  display: block;
+#result-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#result-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#result-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 button {
   padding: 10px 20px;
-  margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+button:hover {
+  background-color: #ab7819;
 }

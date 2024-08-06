@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>건강 퀴즈 - 퀴즈</title>
+    <title>건강 퀴즈 - 멋쟁이</title>
     <link rel="stylesheet" href="../css/quiz.css" />
   </head>
   <body>
     <div id="app">
+      <img id="quiz-image" src="../images/initial_image.png" alt="Quiz Image" />
       <div class="page active">
         <div id="question-container"></div>
-        <button id="next-btn">다음</button>
+        <div id="option-buttons">
+          <button class="option-btn" id="option1-btn"></button>
+          <button class="option-btn" id="option2-btn"></button>
+        </div>
       </div>
     </div>
     <script src="../js/quiz.js"></script>
