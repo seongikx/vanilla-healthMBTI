@@ -25,7 +25,7 @@ html {
 }
 
 .header-logo {
-  width: 100px;
+  width: 450px;
   height: auto;
 }
 
@@ -36,12 +36,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 60px;
-  height: calc(100vh - 60px); /* 헤더 높이를 제외한 화면 전체 높이 */
+  height: calc(100vh - 60px);
   border-radius: 8px;
-  overflow: hidden; /* 배경색 나누기 위한 속성 */
+  overflow: visible;
 }
-
 .container::before,
 .container::after {
   content: "";
@@ -83,7 +83,7 @@ input[type="text"] {
 button {
   width: 100%;
   padding: 10px 20px;
-  background-color: #5cb85c;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -92,5 +92,23 @@ button {
 }
 
 button:hover {
-  background-color: #4cae4c;
+  background-color: gray;
+}
+
+.vertical-image {
+  width: 400px; /* 가로 크기를 컨테이너와 동일하게 설정 */
+  height: auto; /* 높이를 자동으로 조정하여 비율 유지 */
+  object-fit: contain; /* 컨테이너 내에서 이미지가 잘리지 않도록 설정 */
+  display: block; /* 이미지를 블록 레벨 요소로 설정 */
+  margin: 10px auto; /* 상하 간격을 주고 가운데 정렬 */
+}
+
+.vertical-image.first {
+  height: auto; /* 첫 번째 이미지 비율에 맞추어 자동으로 조정 */
+  max-height: 30%; /* 첫 번째 이미지 최대 높이 제한 */
+}
+
+.vertical-image.second {
+  height: auto; /* 두 번째 이미지 비율에 맞추어 자동으로 조정 */
+  max-height: 20%; /* 두 번째 이미지 크기를 원래의 20%로 설정 */
 }
