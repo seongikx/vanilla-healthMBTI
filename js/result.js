@@ -84,11 +84,11 @@ const resultTypes = {
 window.addEventListener("load", () => {
   const resultType = localStorage.getItem("quizResult") || "AAAA"; // 기본 유형 설정
   const resultData = resultTypes[resultType];
-
+  const name = localStorage.getItem("name") | null;
   const resultHeading = document.getElementById("result-heading");
   const resultText = document.getElementById("result-text");
 
-  resultHeading.textContent = `${resultType} 유형: ${resultData.title}`;
+  resultHeading.textContent = `${name}님의 유형 : ${resultType}, ${resultData.title}`;
   resultText.textContent = resultData.description;
 });
 
